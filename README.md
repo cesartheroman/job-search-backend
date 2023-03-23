@@ -15,15 +15,13 @@ You'll need to have Docker Desktop installed on your machine to run this in the 
    ```sh
    git clone https://github.com/cesartheroman/job-search-backend.git
    ```
-3. Pull the image from Docker Hub
+3. Edit the `.env.sample` file and change to `.env` and fill in with appropriate env vars.
+4. Pull and run the container image
    ```sh
-   docker pull cesartheroman/job-search-backend
+   docker compose up -d
    ```
-4. Run the newly pulled Docker Image Container
-   ```sh
-   docker run -dp 8000:8000 cesartheroman/job-search-backend
-   ```
-   
+5. You can then open up a terminal and run `docker ps` to make sure the container is running or just open up the Docker Desktop. You should see one container called `job_search_backend` with two running containers `web-1` and `postgresdb-1`.
+
 ## Contributing
 
 1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
