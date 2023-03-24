@@ -30,6 +30,7 @@ You'll need to have Docker installed on your machine to run this in the containe
    docker compose up -d
    docker compose down
    ```
+ 6. You might come up against an error when running `docker compose` relating to not having permission, I'm not exactly sure why that is but all you need to do is run the command again but with sudo: `sudo docker compose up` etc.
 
 ## Contributing
 
